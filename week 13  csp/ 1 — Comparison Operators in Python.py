@@ -12,24 +12,63 @@
 
 a = 3
 b = 4
+print(a) #output 3
+print(b) # output4
+print(a == b) #output False
 
-print(a == b)   # False
-print(a != b)   # True
-print(a > b)    # False
-print(a < b)    # True
-print(a >= b)   # False
-print(a <= b)   # True
+print(a == b)   # checks for equality#False
+print(a != b)   # checks if its not equal # True
+print(a > b)    # checks for greater than # False
+print(a < b)    # checks for less than # True
+print(a >= b)   # checks for greater than or equal to # False
+print(a <= b)   # checks for lesss than or equal to # True
 
 
 #predict the output of the following comparisons:
-10 > 5
-7 == 2 * 3 + 1
-8 != 8
-4 <= 2 + 2
+10 > 5 #output True
+7 == 2 * 3 + 1 # output true
+8 != 8 # output False
+4 <= 2 + 2 #output True
 
 # Write 3 examples that result in True and 3 that result in False.
+7 > 5 #output True
+3 < 10 #output True
+5 == 3 + 2 #output True
+
+6 > 11 # output False
+8 < 2 # output False
+4 + 10 <= 2 # output False
 
 # Create a simple grade-checking condition:
 
 # practice problem :
 # where a student must check if their score is greater than or equal to 60 to pass a test.# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
+
+# asking student score
+score = int(input("What is your score?"))
+# make this program for all grading spectrums
+# if the score is between 90 -100 . . you got an A
+# if the score is between 80 - 89 -- you got a B
+# if the score is between 70 - 79 -- you got a C
+# if the score is between 61 - 69... you got a D
+# else you failed
+
+
+if score >= 60:
+    print("you passed the test")
+else:
+    print("You didn't pass")
+if score >=90 <=100:
+    print("You got an A")
+if score >=80 <=89:
+    print("You got a B")
+# if the score is between 70 - 79 -- you got a C
+elif score >=70 & score<=79:
+     print("you got a C")
+# if the score is between 61 - 69... you got a D
+elif score >=60 & score <= 69:
+    print("You got a D")
+else:
+    print("you failed, come for ACLAB")
+#ask for a password
+password = input("What is your password? ")
