@@ -59,9 +59,25 @@ for row in num_pad:
 # Build a matrix variable containing 3 lists of 3 numbers each.
 
 # Print the first list.
+[4, 5, 6]
+[7, 8, 9]
+[10, 11, 12]
+
+matrix = [[4, 5, 6],
+          [7, 8, 9],
+          [10, 11, 12]]
+
+print(matrix[0]) #[4, 5,6]
+
 
 # Print the second item from the third list.
-
+print(matrix[2][1])
 # Use a list comprehension to extract the last item from each sub-list.
-
+last_items = [row[-1] for row in matrix]
+print(last_items)
 # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+squares = [x**2 for x in range (1, 11)]
+for x in range(1, 11):
+    print(x**2)
+
+print(squares)
